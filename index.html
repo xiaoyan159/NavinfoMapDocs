@@ -7,6 +7,10 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <!--评论系统-gittalk-->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
 </head>
 <body>
   <div data-app id="app">加载中...</div>
@@ -27,7 +31,8 @@
         position: "top",
         color: "var(--theme-color,#42b983)",
         height: "3px",
-      }
+      },
+      // disqus: 'shortname', // 评论系统
   }
   </script>
   <!-- Docsify v4 -->
@@ -40,5 +45,8 @@
   <script src="https://cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
   <!--java高亮-->
   <script src="./components/prism-java.min.js"></script>
+  <!--评论系统-->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/disqus.min.js"></script>
+  
 </body>
 </html>
